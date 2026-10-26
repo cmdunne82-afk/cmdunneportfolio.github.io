@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Remove the next line when you are happy for search engines to find this site -->
+<meta name="robots" content="noindex, nofollow">
+<title>Caroline Dunne — Quality, Accreditation &amp; Organisational Excellence</title>
+<meta name="description" content="Caroline Dunne — quality assurance, accreditation and organisational excellence in education. Bilingual English / French.">
+<!-- Link preview (LinkedIn, email, messaging). TODO: replace YOUR-SITE-ADDRESS with your GitHub Pages address, e.g. https://cdunne.github.io -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Caroline Dunne — Quality, Accreditation &amp; Organisational Excellence">
+<meta property="og:description" content="I build quality systems, and the teams that run them, across education, borders and regulatory frameworks.">
+<meta property="og:image" content="YOUR-SITE-ADDRESS/photo.jpg">
+<meta property="og:url" content="YOUR-SITE-ADDRESS/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="photo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* palette taken from the LinkedIn banner: cream -> sage */
+  --bg:#f7f6ee; --surface:#ffffff; --ink:#2a2f2d; --muted:#5d6762; --line:#e2e3d8;
+  --accent:#3e6b5a; --accent-soft:#e4ede6; --navy:#1f3d33;
+  --cream:#f1eede; --sage:#d3e2d8;
+  --forest:#1f3d33; --honey:#8f5f2a; --band:#1f3d33; --band-ink:#eef0e6; --band-muted:#b9cbc1;
+  --serif:"Source Serif 4", Georgia, serif; --sans:Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#151a18; --surface:#1c2320; --ink:#e9eae3; --muted:#a6afaa; --line:#2b3430;
+         --accent:#9cc7b4; --accent-soft:#22302a; --navy:#c5dccf;
+         --cream:#1a201d; --sage:#22332c;
+         --forest:#d6e6dc; --honey:#d9a86a; --band:#1f3d33; --band-ink:#eef0e6; --band-muted:#b9cbc1; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+/* language switching */
+html[data-lang="en"] body [lang="fr"], html[data-lang="fr"] body [lang="en"]{display:none !important}
+
+a{color:var(--accent)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+
+/* header */
+header.top{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+.brand{font-family:var(--serif);font-weight:600;font-size:18px;color:var(--ink);text-decoration:none;white-space:nowrap}
+nav.links{display:flex;gap:22px;font-size:14px}
+nav.links a{color:var(--muted);text-decoration:none}
+nav.links a:hover{color:var(--ink)}
+.switch{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--surface)}
+.switch button{border:0;background:transparent;color:var(--muted);font:600 12px var(--sans);letter-spacing:.06em;padding:5px 11px;border-radius:999px;cursor:pointer}
+.switch button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+nav.links a{white-space:nowrap}
+@media (max-width:980px){ nav.links{display:none} }
+section[id]{scroll-margin-top:60px}
+h4{line-height:1.3}
+
+/* hero */
+.hero{padding:88px 0 56px;background:linear-gradient(115deg,var(--cream) 0%,var(--cream) 45%,var(--sage) 100%)}
+h1,h2{color:var(--forest)}
+.eyebrow{color:var(--accent)}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(38px,6vw,60px);line-height:1.08;margin:0 0 22px;letter-spacing:-.01em}
+.lede{font-family:var(--serif);font-size:clamp(20px,2.4vw,24px);line-height:1.45;max-width:720px;margin:0 0 18px}
+.intro{color:var(--muted);max-width:680px;margin:0}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:48px 0 0}
+.stat{background:var(--surface);padding:22px 20px}
+.stat b{display:block;font-family:var(--serif);font-weight:600;font-size:34px;line-height:1.1;color:var(--navy)}
+.stat span{display:block;font-size:13.5px;color:var(--muted);margin-top:6px;line-height:1.45}
+@media (max-width:720px){ .stats{grid-template-columns:1fr 1fr} }
+
+/* sections */
+section.case{padding:72px 0;border-top:1px solid var(--line)}
+.num{font:600 13px var(--sans);color:var(--honey);letter-spacing:.12em}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(28px,3.6vw,38px);line-height:1.15;margin:8px 0 10px}
+.dates{color:var(--muted);font-size:14px;margin:0 0 30px}
+h3{font:600 13px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:34px 0 12px}
+h4{font-family:var(--serif);font-weight:600;font-size:21px;margin:0 0 8px}
+p{margin:0 0 14px}
+ul.points{padding:0;margin:0;list-style:none}
+ul.points li{position:relative;padding-left:22px;margin:0 0 11px}
+ul.points li::before{content:"";position:absolute;left:0;top:.72em;width:9px;height:2px;background:var(--accent)}
+
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:860px){ .grid3{grid-template-columns:1fr} }
+.takeaway{margin-top:28px;padding:18px 22px;border-left:3px solid var(--honey);font-family:var(--serif);font-size:19px;line-height:1.5;color:var(--forest)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:760px){ .grid2{grid-template-columns:1fr} }
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card .tag{display:inline-block;font:600 11.5px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:4px 9px;border-radius:6px;margin-bottom:12px}
+.context{background:var(--accent-soft);border-radius:14px;padding:22px 24px;margin:0 0 8px}
+.context p:last-child{margin:0}
+
+.results{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
+.results div{border-left:3px solid var(--accent);padding:4px 0 4px 14px}
+.results b{display:block;font-family:var(--serif);font-size:26px;color:var(--navy);line-height:1.15}
+.results span{font-size:14px;color:var(--muted)}
+@media (max-width:720px){ .results{grid-template-columns:1fr} }
+
+blockquote{margin:0;font-family:var(--serif);font-size:18px;line-height:1.5}
+blockquote footer{font:500 13.5px var(--sans);color:var(--muted);margin-top:10px}
+
+.certs{width:100%;border-collapse:collapse;font-size:15px;margin-top:6px}
+.certs th,.certs td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.certs th{font:600 12px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.certs td:first-child{font-weight:600}
+.table-wrap{overflow-x:auto}
+
+ol.principles{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:p}
+ol.principles li{counter-increment:p;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+ol.principles li::before{content:"0" counter(p);font:600 13px var(--sans);color:var(--accent);letter-spacing:.1em;display:block;margin-bottom:8px}
+ol.principles b{display:block;font-family:var(--serif);font-size:19px;margin-bottom:6px}
+ol.principles span{color:var(--muted);font-size:14.5px}
+@media (max-width:820px){ ol.principles{grid-template-columns:1fr} }
+
+.contact{padding:80px 0 88px;background:var(--band);color:var(--band-ink)}
+.contact h2{color:var(--band-ink)}
+.contact .intro{color:var(--band-muted)}
+.contact .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-block;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px}
+.btn.primary{background:var(--band-ink);color:var(--band)}
+.btn.ghost{border:1px solid rgba(238,240,230,.35);color:var(--band-ink);background:transparent}
+footer.foot{background:var(--band);border-top:1px solid rgba(238,240,230,.15);padding:22px 0;color:var(--band-muted);font-size:13px}
+
+/* hero with portrait */
+.hero-grid{display:grid;grid-template-columns:1fr 260px;gap:48px;align-items:center}
+.portrait{order:2;width:260px;height:260px;border-radius:50%;object-fit:cover;border:6px solid var(--surface);box-shadow:0 18px 40px -18px rgba(31,61,51,.45)}
+@media (max-width:760px){
+  .hero{padding-top:48px}
+  .hero-grid{grid-template-columns:1fr;gap:24px}
+  .portrait{order:0;width:132px;height:132px;border-width:4px}
+}
+
+/* timeline */
+.journey{padding:44px 0 52px;border-top:1px solid var(--line)}
+.journey h3{margin:0 0 26px}
+.timeline{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(7,1fr);gap:14px;position:relative}
+.timeline::before{content:"";position:absolute;left:6px;right:6px;top:6px;height:2px;background:linear-gradient(90deg,var(--sage),var(--accent))}
+.timeline li{position:relative;padding-top:24px;font-size:13.5px;line-height:1.45;color:var(--muted)}
+.timeline li::before{content:"";position:absolute;left:0;top:0;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.timeline li.now::before{background:var(--honey);border-color:var(--honey);box-shadow:0 0 0 5px color-mix(in srgb,var(--honey) 22%,transparent)}
+.timeline b{display:block;font-family:var(--serif);font-size:20px;color:var(--forest);margin-bottom:4px}
+@media (max-width:860px){
+  .timeline{grid-template-columns:1fr;gap:0;padding-left:26px}
+  .timeline::before{left:6px;right:auto;top:6px;bottom:44px;width:2px;height:auto;background:linear-gradient(180deg,var(--sage),var(--accent))}
+  .timeline li{padding:0 0 20px}
+  .timeline li::before{left:-26px;top:5px}
+  .timeline b{display:inline;font-size:18px;margin-right:8px}
+}
+
+/* read more */
+.lede-s{font-size:17px;max-width:760px}
+details.more{margin-top:26px}
+details.more summary{list-style:none;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font:600 14px var(--sans);color:var(--accent);padding:10px 18px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+details.more summary::-webkit-details-marker{display:none}
+details.more summary::after{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s}
+details.more[open] summary::after{transform:rotate(-135deg) translate(-2px,0)}
+details.more summary:hover{border-color:var(--accent)}
+details.more .open-l, details.more[open] .closed-l{display:none}
+details.more[open] .open-l{display:inline}
+details.more[open] > *:not(summary){animation:fadein .35s ease}
+@keyframes fadein{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* scroll reveal (only when JS runs and motion is welcome) */
+@media (prefers-reduced-motion: no-preference){
+  html.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease}
+  html.js .reveal.in{opacity:1;transform:none}
+}
+
+.bring{padding:48px 0 56px;border-top:1px solid var(--line);background:var(--surface)}
+.bring h3{margin:0 0 24px}
+.bring-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.bring-grid > div{border-top:3px solid var(--accent);padding-top:14px}
+.bring-grid b{display:block;font-family:var(--serif);font-size:19px;line-height:1.3;color:var(--forest);margin-bottom:6px}
+.bring-grid p{font-size:14.5px;color:var(--muted);margin:0}
+@media (max-width:900px){ .bring-grid{grid-template-columns:1fr 1fr} }
+@media (max-width:560px){ .bring-grid{grid-template-columns:1fr} }
+.facts{margin:40px 0 0;display:grid;gap:14px;border-top:1px solid rgba(238,240,230,.18);padding-top:24px}
+.facts > div{display:grid;grid-template-columns:120px 1fr;gap:12px}
+.facts dt{font:600 12px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--band-muted);padding-top:3px}
+.facts dd{margin:0;font-size:15px;color:var(--band-ink)}
+@media (max-width:560px){ .facts > div{grid-template-columns:1fr;gap:2px} }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Caroline Dunne</a>
+    <nav class="links">
+      <a href="#quality"><span lang="en">Quality</span><span lang="fr">Qualité</span></a>
+      <a href="#international"><span lang="en">International accreditation</span><span lang="fr">Accréditation internationale</span></a>
+      <a href="#rncp">RNCP</a>
+      <a href="#ai"><span lang="en">AI</span><span lang="fr">IA</span></a>
+      <a href="#principles"><span lang="en">How I work</span><span lang="fr">Ma façon de travailler</span></a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="switch" role="group" aria-label="Language / Langue">
+      <button type="button" data-set="en" aria-pressed="true">EN</button>
+      <button type="button" data-set="fr" aria-pressed="false">FR</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+   <div class="hero-grid">
+    <img class="portrait" src="photo.jpg" alt="Caroline Dunne" width="320" height="320">
+    <div class="hero-text">
+    <p class="eyebrow"><span lang="en">Quality · Accreditation · Organisational excellence</span><span lang="fr">Qualité · Accréditation · Excellence opérationnelle</span></p>
+    <h1>Caroline Dunne</h1>
+    <p class="lede" lang="en">I build quality systems, and the teams that run them, across education, borders and regulatory frameworks.</p>
+    <p class="lede" lang="fr">Je construis des démarches qualité, et les équipes qui les font vivre, dans l’éducation, à l’international et au sein de cadres réglementaires exigeants.</p>
+    <p class="intro" lang="en">Bilingual English/French leader with 15+ years in education and learning. At OpenClassrooms since 2018, I built the quality assurance function from a blank page, and today co-lead Accreditation, Partnerships &amp; Quality Assurance within Learning Products, leading a multinational team of four.</p>
+    <p class="intro" lang="fr">Manager bilingue anglais/français, plus de 15 ans d’expérience dans l’éducation et la formation. Chez OpenClassrooms depuis 2018, j’ai créé la fonction assurance qualité à partir de zéro et je co-dirige aujourd’hui le pôle Accréditation, Partenariats &amp; Assurance Qualité au sein de Learning Products, à la tête d’une équipe internationale de quatre personnes.</p>
+    </div>
+   </div>
+
+    <div class="stats">
+      <div class="stat"><b data-count="17">17</b><span lang="en">RNCP titles in the certification portfolio</span><span lang="fr">titres RNCP dans le portefeuille de certifications</span></div>
+      <div class="stat"><b data-count="3">3</b><span lang="en">accreditation frameworks: France Compétences, CAMES, WSCUC</span><span lang="fr">cadres d’accréditation : France Compétences, CAMES, WSCUC</span></div>
+      <div class="stat"><b data-count="42" data-prefix="−" data-suffix="%">−42%</b><span lang="en">learner requests about course quality in two years</span><span lang="fr">de demandes apprenants liées à la qualité des cours en deux ans</span></div>
+      <div class="stat"><b data-count="6">6</b><span lang="en">people in my team at its largest (2023); 4 today, from several countries</span><span lang="fr">personnes dans mon équipe au plus fort (2023) ; 4 aujourd’hui, de plusieurs nationalités</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIMELINE ============ -->
+<section class="journey reveal" aria-label="Career timeline / Parcours">
+  <div class="wrap">
+    <h3><span lang="en">My journey</span><span lang="fr">Mon parcours</span></h3>
+    <ol class="timeline">
+      <li><b>2005</b><span lang="en">Teaching in the UK, South Korea and France</span><span lang="fr">Enseignante au Royaume-Uni, en Corée du Sud et en France</span></li>
+      <li><b>2010</b><span lang="en">Berlitz France: Manager of Instruction</span><span lang="fr">Berlitz France : Manager of Instruction</span></li>
+      <li><b>2018</b><span lang="en">Joins OpenClassrooms to create the QA role</span><span lang="fr">Arrivée chez OpenClassrooms pour créer le poste qualité</span></li>
+      <li><b>2020</b><span lang="en">Builds and grows the QA team</span><span lang="fr">Construction de l’équipe qualité</span></li>
+      <li><b>2021</b><span lang="en">First CAMES recognition</span><span lang="fr">Première reconnaissance CAMES</span></li>
+      <li><b>2024</b><span lang="en">Certification &amp; Partnerships Manager</span><span lang="fr">Certification &amp; Partnerships Manager</span></li>
+      <li class="now"><b>2026</b><span lang="en">Co-lead, Accreditation, Partnerships &amp; QA</span><span lang="fr">Co-direction Accréditation, Partenariats &amp; Qualité</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ WHAT I BRING ============ -->
+<section class="bring reveal">
+  <div class="wrap">
+    <h3><span lang="en">What I bring to an organisation</span><span lang="fr">Ce que j’apporte à une organisation</span></h3>
+    <div class="bring-grid">
+      <div><b lang="en">Building from scratch</b><b lang="fr">Construire à partir de zéro</b><p lang="en">Setting up functions, standards and teams where none existed, and making them last.</p><p lang="fr">Créer des fonctions, des standards et des équipes là où il n’y avait rien, et les rendre durables.</p></div>
+      <div><b lang="en">Making performance visible</b><b lang="fr">Rendre la performance visible</b><p lang="en">KPIs, dashboards and root-cause analysis that turn data into decisions.</p><p lang="fr">Indicateurs, tableaux de bord et analyse des causes pour transformer les données en décisions.</p></div>
+      <div><b lang="en">Leading change across teams</b><b lang="fr">Conduire le changement en transverse</b><p lang="en">Bringing Product, Operations, Legal, Finance and HR along, through trust rather than control.</p><p lang="fr">Embarquer Produit, Opérations, Juridique, Finance et RH, par la confiance plutôt que le contrôle.</p></div>
+      <div><b lang="en">Delivering under scrutiny</b><b lang="fr">Réussir sous le regard d’évaluateurs externes</b><p lang="en">Audits, accreditations and regulators in France, Africa and the United States.</p><p lang="fr">Audits, accréditations et régulateurs en France, en Afrique et aux États-Unis.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 QUALITY ============ -->
+<section class="case reveal" id="quality">
+  <div class="wrap">
+    <div lang="en">
+      <span class="num">01 — QUALITY</span>
+      <h2>Building quality assurance, and the team behind it</h2>
+      <p class="dates">OpenClassrooms · Quality Assurance Manager · 2018–2024</p>
+
+      <div class="context">
+        <p><strong>The starting point.</strong> In 2018 OpenClassrooms created its first role dedicated to the quality of its learning content. Quality work was already happening informally (peer reviews between instructional designers, a pre-publication checklist) but nothing was documented or systematic, and the Learning team was producing content at pace in agile squads.</p>
+      </div>
+
+      <h3>Results</h3>
+      <div class="results">
+        <div><b>−42%</b><span>requests about course quality over two years</span></div>
+        <div><b>100+ → 32</b><span>checklist items, as standards became habits</span></div>
+        <div><b>A–Z</b><span>QA embedded across Learning, Product, Operations and Support</span></div>
+      </div>
+
+      <details class="more"><summary><span class="closed-l">Read more</span><span class="open-l">Show less</span></summary>
+      <h3>What I did</h3>
+      <ul class="points">
+        <li><strong>Coach, not gatekeeper.</strong> I positioned QA as support for learning designers rather than a team that “polices” their work, and built on existing practices instead of replacing them. Those relationships became the foundation for every process that followed.</li>
+        <li><strong>Moved quality upstream.</strong> Starting with end-of-production reviews, I progressively got involved earlier (course plans, first chapters, videos before integration) so that improvements could be made when they cost least.</li>
+        <li><strong>Built a 360° view of the learner.</strong> By handling learner and mentor requests on live programmes, and building Zendesk and Salesforce dashboards that analyse requests by programme, type and resolution time, we could show where problems were and argue for change with evidence.</li>
+        <li><strong>Kept iterating.</strong> Our course checklist went from more than 100 items to 32: as standards became second nature, we pruned them and focused energy where it mattered.</li>
+      </ul>
+
+      <h3>Growing the team (from 2020)</h3>
+      <div class="grid2">
+        <div class="card"><span class="tag">Recruitment</span><h4>Hiring for difference</h4><p>My first hire came from tech QA, automation and data rather than education, which complemented my own profile perfectly. At its largest, in 2023, the team had six members and five nationalities between us.</p></div>
+        <div class="card"><span class="tag">Onboarding</span><h4>Remote-first onboarding</h4><p>When Covid hit, I redesigned onboarding around a Presentation–Practice–Performance model from language teaching, with paired reviews, asynchronous Q&amp;A and a “first weeks” journal to capture newcomers’ fresh perspective.</p></div>
+        <div class="card"><span class="tag">Consistency</span><h4>Calibration sessions</h4><p>On a team member’s suggestion, we introduced calibration: everyone reviews the same material, then we compare. These covered accessibility, videos, images, written content and learner requests.</p></div>
+        <div class="card"><span class="tag">Partnership</span><h4>QA / Learning Design pairs</h4><p>Each QA specialist partnered with a set of learning designers, building trust, deeper knowledge of specific programmes and more autonomy in answering learners and mentors.</p></div>
+      </div>
+
+      </details>
+
+      <h3>In colleagues’ words</h3>
+      <div class="grid2">
+        <div class="card"><blockquote>“I consider Quality Assurance to be my second set of educational eyes. Once a QA has reviewed a project, I am completely reassured about its quality for students and mentors.”<footer>Charlotte, Learning Designer</footer></blockquote></div>
+        <div class="card"><blockquote>“As a PM, it’s a real asset to rely on a QA team that knows our paths inside out. Systematic audits let us anticipate content updates and keep pedagogical quality consistent.”<footer>Sébastien, Learning Product Manager</footer></blockquote></div>
+      </div>
+    </div>
+
+    <div lang="fr">
+      <span class="num">01 — QUALITÉ</span>
+      <h2>Construire l’assurance qualité, et l’équipe qui la porte</h2>
+      <p class="dates">OpenClassrooms · Quality Assurance Manager · 2018–2024</p>
+
+      <div class="context">
+        <p><strong>Le point de départ.</strong> En 2018, OpenClassrooms crée son premier poste dédié à la qualité de ses contenus pédagogiques. La qualité existait déjà de manière informelle (relectures entre concepteurs pédagogiques, checklist avant publication) mais rien n’était documenté ni systématisé, dans une équipe Learning qui produisait vite, organisée en squads agiles.</p>
+      </div>
+
+      <h3>Résultats</h3>
+      <div class="results">
+        <div><b>−42%</b><span>de demandes liées à la qualité des cours en deux ans</span></div>
+        <div><b>100+ → 32</b><span>points de contrôle, les standards devenus des réflexes</span></div>
+        <div><b>A–Z</b><span>une qualité intégrée chez Learning, Produit, Opérations et Support</span></div>
+      </div>
+
+      <details class="more"><summary><span class="closed-l">Lire la suite</span><span class="open-l">Réduire</span></summary>
+      <h3>Ce que j’ai fait</h3>
+      <ul class="points">
+        <li><strong>Accompagner plutôt que contrôler.</strong> J’ai positionné la qualité comme un soutien aux concepteurs pédagogiques, et non comme une « police », en m’appuyant sur les pratiques existantes plutôt qu’en les remplaçant. Ces relations ont été le socle de tous les processus qui ont suivi.</li>
+        <li><strong>Intervenir plus tôt.</strong> Partant de relectures en fin de production, je suis intervenue de plus en plus en amont (plans de parcours, premiers chapitres, vidéos avant intégration) pour corriger au moment où cela coûte le moins.</li>
+        <li><strong>Une vision à 360° de l’apprenant.</strong> En traitant les demandes des apprenants et des mentors sur les parcours en ligne, et en créant des tableaux de bord Zendesk et Salesforce par parcours, typologie et délai de résolution, nous pouvions objectiver les problèmes et défendre les améliorations avec des données.</li>
+        <li><strong>Itérer en continu.</strong> Notre checklist de cours est passée de plus de 100 points à 32 : à mesure que les standards devenaient des réflexes, nous les avons allégés pour concentrer l’énergie là où elle comptait.</li>
+      </ul>
+
+      <h3>Faire grandir l’équipe (à partir de 2020)</h3>
+      <div class="grid2">
+        <div class="card"><span class="tag">Recrutement</span><h4>Recruter la complémentarité</h4><p>Ma première recrue venait de la QA tech, de l’automatisation et de la data plutôt que de l’éducation : un profil parfaitement complémentaire du mien. À son plus fort, en 2023, l’équipe comptait six personnes et cinq nationalités.</p></div>
+        <div class="card"><span class="tag">Intégration</span><h4>Un onboarding pensé pour le distanciel</h4><p>Avec le Covid, j’ai repensé l’onboarding sur le modèle « Présentation – Pratique – Performance » issu de l’enseignement des langues : relectures en binôme, questions asynchrones et un « journal des premières semaines » pour capter le regard neuf des arrivants.</p></div>
+        <div class="card"><span class="tag">Cohérence</span><h4>Des sessions de calibrage</h4><p>Sur proposition d’un membre de l’équipe, nous avons mis en place des calibrages : chacun relit le même contenu, puis on compare. Thèmes abordés : accessibilité, vidéos, images, contenus écrits, demandes apprenants.</p></div>
+        <div class="card"><span class="tag">Partenariat</span><h4>Binômes QA / Learning Design</h4><p>Chaque spécialiste qualité travaillait avec un groupe de concepteurs pédagogiques : plus de confiance, une connaissance approfondie des parcours et davantage d’autonomie face aux apprenants et aux mentors.</p></div>
+      </div>
+
+      </details>
+
+      <h3>Ce qu’en disent mes collègues</h3>
+      <div class="grid2">
+        <div class="card"><blockquote>« Pour moi, l’équipe qualité, c’est mon deuxième regard pédagogique. Une fois qu’un projet a été relu par la QA, je suis totalement rassurée sur sa qualité pour les étudiants et les mentors. »<footer>Charlotte, Learning Designer</footer></blockquote></div>
+        <div class="card"><blockquote>« En tant que PM, c’est un véritable atout de pouvoir s’appuyer sur une équipe QA qui maîtrise parfaitement nos parcours. L’audit systématique de nos formations nous permet d’anticiper les mises à jour et de garantir une qualité pédagogique constante. »<footer>Sébastien, Learning Product Manager</footer></blockquote></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 INTERNATIONAL ============ -->
+<section class="case reveal" id="international">
+  <div class="wrap">
+    <div lang="en">
+      <span class="num">02 — INTERNATIONAL ACCREDITATION</span>
+      <h2>Meeting African and American higher-education standards</h2>
+      <p class="dates">OpenClassrooms · CAMES 2021 &amp; 2025 · WSCUC</p>
+
+      <p class="lede-s"><strong>CAMES</strong> recognition across 19 African countries (2021, renewed 2025) and <strong>WSCUC</strong> institutional accreditation in the United States.</p>
+      <h3>What this work demonstrates</h3>
+      <p>Turning demanding external frameworks, written for traditional universities, into processes that work for an online, project-based organisation, and bringing Learning, Product, Operations, Legal and Finance teams along with them.</p>
+
+      <details class="more"><summary><span class="closed-l">Read more</span><span class="open-l">Show less</span></summary>
+      <div class="grid2">
+        <div class="card">
+          <span class="tag">CAMES · Africa</span>
+          <h4>Recognition across 19 countries</h4>
+          <p>The <em>Conseil africain et malgache pour l’enseignement supérieur</em> (CAMES) brings together 19 French-speaking African states. Through its recognition programme (PRED), an accredited diploma is recognised across all member states for further study and public-sector competitive exams, without separate equivalence procedures in each country. Recognition is granted for five years.</p>
+          <h3>My role</h3>
+          <ul class="points">
+            <li>Led the first application, obtained in 2021, for the <em>Ingénieur Responsable Pédagogique</em> path.</li>
+            <li>Led the 2025 renewal: self-evaluation against CAMES quality standards, evidence and data collection, coordination of contributors across teams, preparation for external evaluation.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="tag">WSCUC · United States</span>
+          <h4>Institutional accreditation</h4>
+          <p>The WASC Senior College and University Commission (WSCUC) is a US institutional accreditor. Its accreditation followed a multi-year review ending in an on-site visit, and allows OpenClassrooms to award associate, bachelor’s and master’s degrees.</p>
+          <h3>My role</h3>
+          <ul class="points">
+            <li>Worked with the accreditation manager to prepare the submission.</li>
+            <li>Took part in the commission’s on-site visit.</li>
+            <li>Led implementation and deployment: credit hour policy, transfer credit policy, and a commission reviewing French students’ requests for a degree.</li>
+            <li>Now oversee ongoing compliance and academic governance policies.</li>
+          </ul>
+        </div>
+      </div>
+      </details>
+    </div>
+
+    <div lang="fr">
+      <span class="num">02 — ACCRÉDITATION INTERNATIONALE</span>
+      <h2>Répondre aux standards de l’enseignement supérieur, en Afrique et aux États-Unis</h2>
+      <p class="dates">OpenClassrooms · CAMES 2021 &amp; 2025 · WSCUC</p>
+
+      <p class="lede-s">Reconnaissance <strong>CAMES</strong> dans 19 pays africains (2021, renouvelée en 2025) et accréditation institutionnelle <strong>WSCUC</strong> aux États-Unis.</p>
+      <h3>Ce que ce travail démontre</h3>
+      <p>Savoir traduire des référentiels externes exigeants, pensés pour des universités traditionnelles, en processus adaptés à un organisme en ligne fondé sur la pédagogie par projets, en embarquant les équipes Learning, Produit, Opérations, Juridique et Finance.</p>
+
+      <details class="more"><summary><span class="closed-l">Lire la suite</span><span class="open-l">Réduire</span></summary>
+      <div class="grid2">
+        <div class="card">
+          <span class="tag">CAMES · Afrique</span>
+          <h4>Une reconnaissance dans 19 pays</h4>
+          <p>Le Conseil africain et malgache pour l’enseignement supérieur (CAMES) réunit 19 États d’Afrique francophone. Grâce à son Programme de reconnaissance et d’équivalence des diplômes (PRED), un diplôme reconnu est valable dans l’ensemble des pays membres pour la poursuite d’études et l’accès aux concours, sans procédure d’équivalence propre à chaque pays. La reconnaissance est accordée pour cinq ans.</p>
+          <h3>Mon rôle</h3>
+          <ul class="points">
+            <li>Pilotage de la première demande, obtenue en 2021, pour le parcours <em>Ingénieur Responsable Pédagogique</em>.</li>
+            <li>Pilotage du renouvellement 2025 : auto-évaluation au regard des référentiels qualité du CAMES, collecte des preuves et des données, coordination des contributeurs, préparation de l’évaluation externe.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="tag">WSCUC · États-Unis</span>
+          <h4>Une accréditation institutionnelle</h4>
+          <p>La WASC Senior College and University Commission (WSCUC) est un organisme d’accréditation institutionnelle américain. Obtenue à l’issue d’un examen de plusieurs années conclu par une visite sur site, cette accréditation permet à OpenClassrooms de délivrer des diplômes de niveau Associate, Bachelor et Master.</p>
+          <h3>Mon rôle</h3>
+          <ul class="points">
+            <li>Préparation du dossier de demande avec la responsable accréditation.</li>
+            <li>Participation à la visite sur site de la commission.</li>
+            <li>Pilotage de la mise en œuvre : politique de crédits horaires, politique de transfert de crédits, et commission dédiée aux demandes de diplôme des apprenants français.</li>
+            <li>Suivi aujourd’hui de la conformité et des politiques de gouvernance académique.</li>
+          </ul>
+        </div>
+      </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 RNCP ============ -->
+<section class="case reveal" id="rncp">
+  <div class="wrap">
+    <div lang="en">
+      <span class="num">03 — RNCP</span>
+      <h2>Designing and registering state-recognised certifications</h2>
+      <p class="dates">OpenClassrooms · Certification &amp; Partnerships Manager, then co-lead · 2024–today</p>
+
+      <div class="context">
+        <p><strong>Why it matters.</strong> In France, a professional title registered with France Compétences in the RNCP (the national register of professional certifications) is recognised by the state and can be funded through public schemes. Getting there means proving a real need in the labour market and building a rigorous skills and assessment framework.</p>
+      </div>
+
+      <h3>Highlights</h3>
+      <div class="table-wrap">
+      <table class="certs">
+        <thead><tr><th>Certification</th><th>Level</th><th>Route</th><th>Registered</th></tr></thead>
+        <tbody>
+          <tr><td>Chargé d’études en rénovation énergétique</td><td>5</td><td>Emerging occupation</td><td>2024</td></tr>
+          <tr><td>Product builder no code</td><td>6</td><td>Emerging occupation</td><td>2026</td></tr>
+          <tr><td>Manager cybersécurité et résilience numérique</td><td>7</td><td>First registration</td><td>2026</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div class="results" style="margin-top:28px">
+        <div><b>17</b><span>RNCP titles in the portfolio</span></div>
+        <div><b>3</b><span>new registrations, 2024–2026</span></div>
+        <div><b>Qualiopi</b><span>2026 renewal audit, led end to end</span></div>
+      </div>
+
+      <details class="more"><summary><span class="closed-l">Read more</span><span class="open-l">Show less</span></summary>
+      <h3>What the work involves</h3>
+      <ul class="points">
+        <li><strong>Opportunity analysis:</strong> labour-market research and employer input to show that the occupation exists and is needed, especially demanding for emerging jobs that have no established track record.</li>
+        <li><strong>Frameworks:</strong> activity, skills and assessment frameworks built with learning designers and industry experts.</li>
+        <li><strong>Submission:</strong> preparing the file and managing exchanges with France Compétences through to the registration decision.</li>
+        <li><strong>Portfolio management:</strong> renewals, compliance and quality across what is now a portfolio of 17 RNCP titles, alongside the organisation’s Qualiopi certification (2026 renewal audit).</li>
+      </ul>
+      </details>
+    </div>
+
+    <div lang="fr">
+      <span class="num">03 — RNCP</span>
+      <h2>Concevoir et enregistrer des certifications reconnues par l’État</h2>
+      <p class="dates">OpenClassrooms · Certification &amp; Partnerships Manager, puis co-direction · 2024–aujourd’hui</p>
+
+      <div class="context">
+        <p><strong>Pourquoi c’est important.</strong> En France, un titre enregistré par France Compétences au RNCP (Répertoire national des certifications professionnelles) est reconnu par l’État et finançable par les dispositifs publics. Y parvenir suppose de démontrer un besoin réel sur le marché du travail et de construire des référentiels de compétences et d’évaluation rigoureux.</p>
+      </div>
+
+      <h3>Temps forts</h3>
+      <div class="table-wrap">
+      <table class="certs">
+        <thead><tr><th>Certification</th><th>Niveau</th><th>Procédure</th><th>Enregistrement</th></tr></thead>
+        <tbody>
+          <tr><td>Chargé d’études en rénovation énergétique</td><td>5</td><td>Métier émergent</td><td>2024</td></tr>
+          <tr><td>Product builder no code</td><td>6</td><td>Métier émergent</td><td>2026</td></tr>
+          <tr><td>Manager cybersécurité et résilience numérique</td><td>7</td><td>Première demande</td><td>2026</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div class="results" style="margin-top:28px">
+        <div><b>17</b><span>titres RNCP dans le portefeuille</span></div>
+        <div><b>3</b><span>nouveaux enregistrements, 2024–2026</span></div>
+        <div><b>Qualiopi</b><span>audit de renouvellement 2026, piloté de bout en bout</span></div>
+      </div>
+
+      <details class="more"><summary><span class="closed-l">Lire la suite</span><span class="open-l">Réduire</span></summary>
+      <h3>Ce que ce travail implique</h3>
+      <ul class="points">
+        <li><strong>Analyse d’opportunité :</strong> étude du marché de l’emploi et consultation d’employeurs pour démontrer l’existence et le besoin du métier, un exercice particulièrement exigeant pour les métiers émergents, sans historique établi.</li>
+        <li><strong>Référentiels :</strong> référentiels d’activités, de compétences et d’évaluation construits avec les concepteurs pédagogiques et des experts métier.</li>
+        <li><strong>Dépôt :</strong> constitution du dossier et échanges avec France Compétences jusqu’à la décision d’enregistrement.</li>
+        <li><strong>Pilotage du portefeuille :</strong> renouvellements, conformité et qualité d’un portefeuille qui compte aujourd’hui 17 titres RNCP, en lien avec la certification Qualiopi de l’organisme (audit de renouvellement 2026).</li>
+      </ul>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 AI ============ -->
+<section class="case reveal" id="ai">
+  <div class="wrap">
+    <div lang="en">
+      <span class="num">04 — AI, QUALITY &amp; TRUST</span>
+      <h2>Using AI responsibly, and putting it to work</h2>
+      <p class="dates">OpenClassrooms · 2024–today</p>
+
+      <div class="context">
+        <p><strong>My angle.</strong> For an organisation that certifies skills, AI raises two questions at once: how do we make sure a diploma still guarantees what a learner can actually do, and how can AI make our own teams more effective? I’ve worked on both.</p>
+      </div>
+
+      <h3>Three areas of work</h3>
+      <div class="grid3">
+        <div class="card"><span class="tag">Governance</span><h4>A generative AI charter for learners</h4><p>I wrote OpenClassrooms’ charter on the use of generative AI, which tells students what they can use AI for and how. It encourages responsible use as a professional skill, while protecting what a diploma must guarantee: real mastery of the skills, transparency about how work was produced, and the ability to explain it.</p></div>
+        <div class="card"><span class="tag">Certification</span><h4>An AI agent for skills frameworks</h4><p>I developed a prototype AI agent that produces first drafts of skills frameworks for RNCP certification files. Experts and learning designers then review and refine the drafts, so teams spend less time on the blank page and more on judgement.</p></div>
+        <div class="card"><span class="tag">Continuous improvement</span><h4>Making learner feedback actionable</h4><p>I built a custom AI assistant that analyses learner satisfaction comments and pulls out recurring themes, so the team gets a clear, shareable summary instead of hundreds of raw comments.</p></div>
+      </div>
+
+      <p class="takeaway">My rule of thumb: AI writes the first draft, people stay accountable for the result.</p>
+    </div>
+
+    <div lang="fr">
+      <span class="num">04 — IA, QUALITÉ &amp; CONFIANCE</span>
+      <h2>Encadrer l’IA, et la mettre au service des équipes</h2>
+      <p class="dates">OpenClassrooms · 2024–aujourd’hui</p>
+
+      <div class="context">
+        <p><strong>Mon angle.</strong> Pour un organisme qui certifie des compétences, l’IA pose deux questions à la fois : comment garantir qu’un diplôme atteste toujours de ce qu’un apprenant sait réellement faire, et comment l’IA peut-elle rendre nos propres équipes plus efficaces ? J’ai travaillé sur les deux.</p>
+      </div>
+
+      <h3>Trois chantiers</h3>
+      <div class="grid3">
+        <div class="card"><span class="tag">Gouvernance</span><h4>Une charte IA générative pour les apprenants</h4><p>J’ai rédigé la charte d’utilisation de l’IA générative d’OpenClassrooms, qui indique aux étudiants ce qu’ils peuvent faire avec l’IA et comment. Elle encourage un usage responsable, devenu une compétence professionnelle, tout en préservant ce que doit garantir un diplôme : la maîtrise réelle des compétences, la transparence sur la façon dont le travail a été produit et la capacité à l’expliquer.</p></div>
+        <div class="card"><span class="tag">Certification</span><h4>Un agent IA pour les référentiels</h4><p>J’ai développé un prototype d’agent IA qui produit des premières versions de référentiels de compétences pour les dossiers RNCP. Experts et concepteurs pédagogiques les relisent et les affinent : moins de temps face à la page blanche, plus de temps pour l’expertise.</p></div>
+        <div class="card"><span class="tag">Amélioration continue</span><h4>Rendre les retours apprenants exploitables</h4><p>J’ai créé un assistant IA qui analyse les commentaires de satisfaction des apprenants et en dégage les thèmes récurrents, pour partager avec l’équipe une synthèse claire plutôt que des centaines de verbatims bruts.</p></div>
+      </div>
+
+      <p class="takeaway">Ma règle : l’IA rédige le premier jet, l’humain reste responsable du résultat.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRINCIPLES ============ -->
+<section class="case reveal" id="principles">
+  <div class="wrap">
+    <div lang="en">
+      <span class="num">HOW I WORK</span>
+      <h2>Six principles I keep coming back to</h2>
+      <ol class="principles">
+        <li><b>Build on what exists</b><span>People accept change more readily when it starts from their own practice.</span></li>
+        <li><b>Get in early</b><span>The later a change comes in a project, the more it costs.</span></li>
+        <li><b>Let data make the case</b><span>If you can’t show where the problem is, you can’t argue for change.</span></li>
+        <li><b>Hire for difference</b><span>Complementary profiles teach a team more than copies of yourself.</span></li>
+        <li><b>Consistency is a team sport</b><span>Calibrate together so everyone applies the same standards.</span></li>
+        <li><b>Tend standards like a garden</b><span>Review, prune and adapt them, or teams forget why they exist.</span></li>
+      </ol>
+    </div>
+    <div lang="fr">
+      <span class="num">MA FAÇON DE TRAVAILLER</span>
+      <h2>Six principes qui me guident</h2>
+      <ol class="principles">
+        <li><b>Partir de l’existant</b><span>Le changement est mieux accepté quand il s’appuie sur les pratiques des équipes.</span></li>
+        <li><b>Intervenir tôt</b><span>Plus une modification arrive tard dans un projet, plus elle coûte cher.</span></li>
+        <li><b>Laisser parler les données</b><span>Sans preuve de l’endroit où se situe le problème, impossible de défendre le changement.</span></li>
+        <li><b>Recruter la différence</b><span>Des profils complémentaires apportent plus à une équipe que des copies de soi-même.</span></li>
+        <li><b>La cohérence, un sport d’équipe</b><span>Se calibrer ensemble pour appliquer les mêmes standards.</span></li>
+        <li><b>Entretenir ses standards comme un jardin</b><span>Les revoir, les élaguer, les adapter, sinon les équipes en oublient le sens.</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2 lang="en">Let’s talk</h2>
+    <h2 lang="fr">Échangeons</h2>
+    <p class="intro" lang="en">I’m always happy to exchange with people working on quality, organisational excellence and learning operations, in education and beyond.</p>
+    <p class="intro" lang="fr">Je suis toujours ravie d’échanger avec celles et ceux qui travaillent sur la qualité, l’excellence opérationnelle et les opérations de formation, dans l’éducation et au-delà.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:c.m.dunne82@gmail.com">c.m.dunne82@gmail.com</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/caroline-dunne/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="Caroline_Dunne_CV.pdf" download><span lang="en">Download my CV</span><span lang="fr">Télécharger mon CV (EN)</span></a>
+    </div>
+    <dl class="facts">
+      <div><dt lang="en">Education</dt><dt lang="fr">Formation</dt><dd lang="en">PGCE, Secondary French — Newcastle University · LLB (Hons) Law &amp; French — University of Strathclyde</dd><dd lang="fr">PGCE, enseignement du français (secondaire) — Newcastle University · LLB (Hons) Droit &amp; Français — University of Strathclyde</dd></div>
+      <div><dt lang="en">Languages</dt><dt lang="fr">Langues</dt><dd lang="en">English (native) · French (bilingual) · Italian (functional) · Korean (beginner)</dd><dd lang="fr">Anglais (langue maternelle) · Français (bilingue) · Italien (intermédiaire) · Coréen (débutant)</dd></div>
+    </dl>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span lang="en">© 2026 Caroline Dunne · Views are my own.</span>
+    <span lang="fr">© 2026 Caroline Dunne · Les propos n’engagent que moi.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root = document.documentElement;
+  var titles = {
+    en: "Caroline Dunne — Quality, Accreditation & Organisational Excellence",
+    fr: "Caroline Dunne — Qualité, Accréditation & Excellence opérationnelle"
+  };
+  function setLang(l){
+    if (l !== "en" && l !== "fr") l = "en";
+    root.setAttribute("data-lang", l);
+    root.setAttribute("lang", l);
+    document.title = titles[l];
+    document.querySelectorAll(".switch button").forEach(function(b){
+      b.setAttribute("aria-pressed", b.dataset.set === l ? "true" : "false");
+    });
+    try { localStorage.setItem("lang", l); } catch(e){}
+  }
+  var initial = new URLSearchParams(location.search).get("lang");
+  if (!initial) { try { initial = localStorage.getItem("lang"); } catch(e){} }
+  if (!initial) initial = (navigator.language || "en").slice(0,2).toLowerCase() === "fr" ? "fr" : "en";
+  setLang(initial);
+  document.querySelectorAll(".switch button").forEach(function(b){
+    b.addEventListener("click", function(){ setLang(b.dataset.set); });
+  });
+  /* motion: scroll reveal + count-up */
+  root.classList.add("js");
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var els = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window && !reduce) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, {threshold:0.08});
+    els.forEach(function(el){ io.observe(el); });
+  } else { els.forEach(function(el){ el.classList.add("in"); }); }
+  if (!reduce) {
+    document.querySelectorAll("[data-count]").forEach(function(el){
+      var end = +el.dataset.count, pre = el.dataset.prefix || "", suf = el.dataset.suffix || "";
+      var t0 = null, dur = 1400;
+      function step(t){
+        if (!t0) t0 = t;
+        var k = Math.min((t - t0) / dur, 1), eased = 1 - Math.pow(1 - k, 3);
+        el.textContent = pre + Math.round(end * eased) + suf;
+        if (k < 1) requestAnimationFrame(step);
+      }
+      el.textContent = pre + "0" + suf;
+      setTimeout(function(){ requestAnimationFrame(step); }, 250);
+    });
+  }
+})();
+</script>
+</body>
+</html>
